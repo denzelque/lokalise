@@ -1,0 +1,18 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+
+.opportunities {
+    background-color: $color-bg-light;
+    min-height: 1033px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+        color: $color-black;
+        padding: 120px 200px 58px 200px;
+        margin: 0;
+    }
+}

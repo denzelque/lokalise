@@ -1,0 +1,38 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.case {
+    padding-right: 36px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 50px;
+        color: $color-black;
+    }
+
+    &__image {
+        margin-top: 20px;
+    }
+
+    &__logo {
+        margin-top: 30px;
+    }
+
+    &__discription {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $color-black;
+        max-width: 290px;
+        margin-top: 11px;
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: $color-black;
+        margin-top: 15px;
+    }
+}

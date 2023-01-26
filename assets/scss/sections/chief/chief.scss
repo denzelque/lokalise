@@ -1,0 +1,31 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.chief {
+    background-color: #c9e8f2;
+    margin-top: 70px;
+
+    &__content {
+        display: flex;
+        padding-top: 60px;
+        justify-content: space-between;
+        padding-bottom: 105px;
+    }
+
+    &__main {
+        color: $color-black;
+        margin-bottom: 23px;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 15px;
+        color: $color-black;
+        margin-bottom: 7px;
+    }
+
+    &__image {
+        margin-left: 85px;
+    }
+
+}

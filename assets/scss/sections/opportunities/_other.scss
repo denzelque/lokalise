@@ -1,0 +1,11 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+
+.other {
+    display: grid;
+    flex-wrap: nowrap;
+    grid-template-areas: "rer1 rer2 rer3" "rer4 rer5 rer6";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}

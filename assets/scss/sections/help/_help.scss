@@ -1,0 +1,17 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.footer {
+    background-color: #eeeeee;
+}
+
+.help {
+    margin-bottom: 77px;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 92px;
+    }
+
+}

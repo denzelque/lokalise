@@ -1,0 +1,75 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-content {
+  display: grid;
+  align-items: center;
+
+  padding: 127px 0;
+
+  @include xl-min {
+    grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
+    grid-template-columns: 560px 1fr;
+  }
+  @include xl-lg {
+    grid-template-areas: "ttl pic" "dsc pic" "act pic" "nts pic";
+    grid-template-columns: 1fr 1fr;
+  }
+  @include lg {
+    text-align: center;
+
+    grid-template-areas: "ttl" "dsc" "pic" "act" "nts";
+  }
+  row-gap: 25px;
+
+  &__title {
+    margin: 0 0 $gap-md;
+
+    grid-area: ttl;
+  }
+
+  &__description {
+    margin-bottom: $gap;
+
+    line-height: 1.4;
+
+    grid-area: dsc;
+    @include xl-min {
+      font-size: 25px;
+    }
+    @include xl {
+      font-size: 1.25rem;
+    }
+    @include lg-min {
+      padding-right: 70px;
+    }
+  }
+  &__actions {
+    display: flex;
+
+    gap: $gap-sm;
+    grid-area: act;
+    @include lg {
+      justify-content: center;
+    }
+  }
+  &__notes {
+    line-height: 1.67;
+
+    grid-area: nts;
+  }
+  &__picture {
+    grid-area: pic;
+  }
+  &__image {
+    grid-area: img;
+    @include lg-min {
+      width: 100%;
+
+      transform: translateX(-20px);
+    }
+    @include lg {
+      width: 50%;
+    }
+  }
+}

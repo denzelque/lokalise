@@ -1,0 +1,171 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.app1 {
+    display: block;
+    margin: 0px 55px 0px 55px;
+    grid-area: rer1;
+
+    &__image {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 21px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 30px;
+    }
+}
+
+.app2 {
+    margin: 0px 55px 0px 55px;
+    grid-area: rer2;
+
+    &__image {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 21px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 30px;
+    }
+}
+
+.app3 {
+    margin: 0px 55px 0px 55px;
+    grid-area: rer3;
+
+    &__image {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 21px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 30px;
+    }
+}
+
+.app4 {
+    margin: 0px 55px 0px 55px;
+    grid-area: rer4;
+
+    &__image {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 21px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 30px;
+    }
+}
+
+.app5 {
+    margin: 0px 55px 0px 55px;
+    grid-area: rer5;
+
+    &__image {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 21px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 30px;
+    }
+}
+
+.app6 {
+    margin: 0px 55px 0px 55px;
+    grid-area: rer6;
+
+    &__image {
+        text-align: center;
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 21px;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 30px;
+    }
+}
