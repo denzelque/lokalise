@@ -2,37 +2,66 @@
 @use "../../mixins" as *;
 
 .case {
-    padding-right: 36px;
+  padding-right: 36px;
 
-    &__title {
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 50px;
-        color: $color-black;
-    }
+  &__title {
+    color: $color-black;
 
-    &__image {
-        margin-top: 20px;
-    }
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+  }
 
-    &__logo {
-        margin-top: 30px;
-    }
+  &__image {
+    margin-top: 20px;
+  }
 
-    &__discription {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        color: $color-black;
-        max-width: 290px;
-        margin-top: 11px;
-    }
+  &__logo {
+    margin-top: 30px;
+  }
 
-    &__link {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
-        color: $color-black;
-        margin-top: 15px;
+  &__discription {
+    max-width: 290px;
+    margin-top: 11px;
+
+    color: $color-black;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__link {
+    margin-top: 15px;
+
+    color: $color-black;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+
+    @include lg-min {
     }
+    @include lg {
+      font-size: 16px;
+    }
+  }
+  &__border {
+    &:after {
+      display: none;
+
+      height: 0.5px;
+
+      content: "";
+
+      background-color: #a0a0a0;
+
+      @include lg-min {
+        display: none;
+      }
+      @include lg {
+        display: block;
+      }
+    }
+  }
 }
