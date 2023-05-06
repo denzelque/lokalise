@@ -3,16 +3,26 @@
 
 
 .opportunities {
-    background-color: $color-bg-light;
-    min-height: 1033px;
+  min-height: 1033px;
 
-    &__title {
-        font-weight: 600;
-        font-size: 50px;
-        line-height: 60px;
-        text-align: center;
-        color: $color-black;
-        padding: 120px 200px 58px 200px;
-        margin: 0;
+  background-color: $color-bg-light;
+
+  &__title {
+    margin: 0;
+    padding: 120px 200px 58px 200px;
+
+    text-align: center;
+
+    color: $color-black;
+
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+
+    @include lg-min {
     }
+    @include lg {
+      padding: 20px 10px 10px 20px;
+    }
+  }
 }

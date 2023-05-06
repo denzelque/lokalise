@@ -2,26 +2,27 @@
 @use "../../mixins" as *;
 
 .copyright {
-    &__content {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 48px;
-        padding-bottom: 48px;
-    }
+  &__content {
+    display: flex;
+    justify-content: space-between;
 
-    &__block {
-        display: flex;
-    }
+    margin-top: 48px;
+    padding-bottom: 48px;
+  }
 
-    &__logo {
-        margin-right: 14px;
-    }
+  &__block {
+    display: flex;
+  }
 
-    &__discription {
-        max-width: 300px;
-    }
+  &__logo {
+    margin-right: 14px;
+  }
 
-    &__paragraph {
-        margin: 0;
-    }
+  &__discription {
+    max-width: 300px;
+  }
+
+  &__paragraph {
+    margin: 0;
+  }
 }

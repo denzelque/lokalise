@@ -31,11 +31,9 @@ h1 {
   @include xl-min {
     font-size: 65px;
   }
-
   @include xl-lg {
     font-size: 50px;
   }
-
   @include lg {
     font-size: 40px;
   }

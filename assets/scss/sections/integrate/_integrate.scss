@@ -2,44 +2,70 @@
 @use "../../mixins" as *;
 
 .integrate {
-    &__content {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        padding: 90px 209px 0px 209px;
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    padding: 90px 209px 0 209px;
+
+    @include lg-min {
     }
-
-    &__title {
-        font-weight: 600;
-        font-size: 65px;
-        line-height: 75px;
-        color: $color-black;
-        text-align: center;
-
+    @include lg {
+      padding: 0;
     }
+  }
 
-    &__discription {
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 30px;
-        text-align: center;
-        color: $color-black;
-        padding-left: 150px;
-        padding-right: 150px;
-        margin-bottom: 25px;
+  &__title {
+    text-align: center;
+
+    color: $color-black;
+
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 75px;
+  }
+
+  &__discription {
+    margin-bottom: 25px;
+    padding-right: 150px;
+    padding-left: 150px;
+
+    text-align: center;
+
+    color: $color-black;
+
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+
+    @include lg-min {
     }
-
-    &__button {
-
-        margin-top: 40px;
-        margin-bottom: 120px;
-        display: block;
-        background-color: $color-accent;
-        padding: 20px;
+    @include lg {
+      padding-right: 0;
+      padding-left: 10px;
     }
+  }
 
-    &__color {
-        color: $color-white;
+  &__button {
+    display: block;
+
+    margin-top: 40px;
+    margin-bottom: 120px;
+    padding: 20px;
+
+    background-color: $color-accent;
+  }
+
+  &__color {
+    color: $color-white;
+  }
+  &__image {
+    @include lg-min {
     }
+    @include lg {
+      width: 100%;
+    }
+  }
 }

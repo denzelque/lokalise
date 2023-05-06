@@ -2,56 +2,85 @@
 @use "../../mixins" as *;
 
 .workers {
-    &__title-main {
-        font-weight: 600;
-        font-size: 50px;
-        line-height: 60px;
-        color: $color-black;
-        padding-top: 114px;
+  &__title-main {
+    padding-top: 114px;
+
+    color: $color-black;
+
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+
+    @include lg-min {
     }
-
-    &__block {
-        display: flex;
-        margin-top: 92px;
-        align-items: baseline;
-        padding-bottom: 150px;
-        justify-content: space-around;
+    @include lg {
+      padding-top: 60px;
+      padding-right: 10px;
+      padding-left: 10px;
     }
+  }
 
-    &__content {
-        margin-left: 25px;
+  &__block {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+
+    margin-top: 92px;
+    padding-bottom: 150px;
+
+    @include lg-min {
     }
-
-    &__image {
-        margin-bottom: 67px;
+    @include lg {
+      flex-wrap: wrap;
     }
+  }
 
-    &__title {
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 40px;
-        color: $color-black;
-        margin-bottom: 29px;
+  &__content {
+    margin-left: 25px;
+
+    @include lg-min {
     }
+    @include lg {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
 
-    &__discription {
-        font-size: 20px;
-        line-height: 30px;
-        color: $color-black;
-        margin-bottom: 26px;
-
+      margin-left: 0;
     }
+  }
 
-    &__link {
+  &__image {
+    margin-bottom: 67px;
+  }
 
-        font-size: 20px;
+  &__title {
+    margin-bottom: 29px;
 
-        text-decoration-line: underline;
+    color: $color-black;
 
-        color: #000000;
-    }
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+  }
 
-    span {
-        text-decoration: underline;
-    }
+  &__discription {
+    margin-bottom: 26px;
+
+    color: $color-black;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__link {
+    color: #000000;
+
+    font-size: 20px;
+
+    text-decoration-line: underline;
+  }
+
+  span {
+    text-decoration: underline;
+  }
 }

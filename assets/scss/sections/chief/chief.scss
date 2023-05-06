@@ -2,30 +2,47 @@
 @use "../../mixins" as *;
 
 .chief {
-    background-color: #c9e8f2;
-    margin-top: 70px;
+  margin-top: 70px;
 
-    &__content {
-        display: flex;
-        padding-top: 60px;
-        justify-content: space-between;
-        padding-bottom: 105px;
+  background-color: #c9e8f2;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 60px;
+    padding-bottom: 105px;
+
+    @include lg-min {
     }
-
-    &__main {
-        color: $color-black;
-        margin-bottom: 23px;
+    @include lg {
+      align-items: center;
+      flex-direction: column-reverse;
     }
+  }
 
-    &__name {
-        font-weight: 400;
-        font-size: 15px;
-        color: $color-black;
-        margin-bottom: 7px;
+  &__main {
+    margin-bottom: 23px;
+
+    color: $color-black;
+  }
+
+  &__name {
+    margin-bottom: 7px;
+
+    color: $color-black;
+
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  &__image {
+    margin-left: 85px;
+
+    @include lg-min {
     }
-
-    &__image {
-        margin-left: 85px;
+    @include lg {
+      margin-left: 0;
     }
-
+  }
 }

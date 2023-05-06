@@ -2,16 +2,22 @@
 @use "../../mixins" as *;
 
 .footer {
-    background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .help {
-    margin-bottom: 77px;
+  margin-bottom: 77px;
 
-    &__block {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 92px;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 92px;
+
+    @include lg-min {
     }
-
+    @include lg {
+      flex-direction: column;
+    }
+  }
 }

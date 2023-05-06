@@ -2,33 +2,68 @@
 @use "../../mixins" as *;
 
 .rated {
-    background-color: #dabc98;
+  background-color: #dabc98;
 
-    &__content {
-        display: flex;
-        padding-top: 69px;
-        align-items: center;
-        padding-bottom: 80px;
+  &__content {
+    display: flex;
+    align-items: center;
+
+    padding-top: 69px;
+    padding-bottom: 80px;
+
+    @include lg-min {
     }
-
-    &__title {
-        font-weight: 600;
-        font-size: 35px;
-        line-height: 50px;
-        color: $color-black;
-        margin: 0px 67px 0px 115px;
+    @include lg {
+      align-items: stretch;
+      flex-direction: column;
     }
-
-    &__block {
-        margin-left: 70px;
+  }
+  &__border {
+    @include lg-min {
     }
-
-
-    &__star {
-        margin-top: 20px;
+    @include lg {
+      display: none;
     }
-
-    &__discription {
-        margin-top: 14px;
+  }
+  &__cake {
+    @include lg-min {
     }
+    @include lg {
+      margin-left: 30px;
+    }
+  }
+  &__title {
+    margin: 0 67px 0 115px;
+
+    color: $color-black;
+
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+
+    @include lg-min {
+    }
+    @include lg {
+      margin-left: 30px;
+    }
+  }
+
+  &__block {
+    margin-left: 70px;
+
+    @include lg-min {
+    }
+    @include lg {
+      margin-left: 30px;
+    }
+  }
+
+
+  &__star {
+    margin-top: 20px;
+  }
+
+  &__discription {
+    margin-top: 14px;
+  }
 }
