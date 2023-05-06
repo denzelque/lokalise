@@ -896,6 +896,15 @@ h1 {
 .chief__image {
   margin-left: 85px;
 }
+.chief__quote {
+  margin: 0;
+
+  color: #000000;
+
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+}
 
 .rated {
   background-color: #dabc98;
@@ -1453,6 +1462,9 @@ h1 {
   }
   .chief__image {
     margin-left: 0;
+  }
+  .chief__quote {
+    margin-top: 10px;
   }
   .rated__content {
     -webkit-box-align: stretch;
